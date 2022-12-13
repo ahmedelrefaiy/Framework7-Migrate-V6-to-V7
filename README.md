@@ -4,6 +4,7 @@
 
 
 Follow these steps:
+
 `1.`Run this command to update your framework7 version to latest version
 ```sh
 npm install framework7@7.0.9
