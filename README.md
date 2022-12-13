@@ -13,7 +13,7 @@ npm install framework7@7.0.9
 ```sh
 npm install dom7@4.0.4
 ```
-`2.`the way you import framework7 resources and components is changed based on `package.json` file under section `exports`. So, you need to remove this line
+`3.`the way you import framework7 resources and components is changed based on `package.json` file under section `exports`. So, you need to remove this line
 ```sh
 import 'framework7/framework7-bundle.css';
 ```
@@ -21,7 +21,7 @@ and replace it with this line
 ```sh
 import 'framework7/css/bundle';
 ```
-`3.`Also, the way you import Dom7 is changed. It become inside framework7. So you need to remove this line
+`4.`Also, the way you import Dom7 is changed. It become inside framework7. So you need to remove this line
 ```sh
 import $ from 'dom7';
 ```
@@ -34,7 +34,7 @@ or with this line, based on what you import from framework7
 import Framework7, { Dom7, getDevice } from 'framework7';
 ```
 
-`4.` if you make global event like: `$(document).on(event, selector, function(){})`. You must first to load Dom7 from Framework7 then store it inside $ variable like these lines
+`5.` if you make global event like: `$(document).on(event, selector, function(){})`. You must first to load Dom7 from Framework7 then store it inside $ variable like these lines
 ```sh
 import { Dom7 } from 'framework7';
 var $ = Dom7;
